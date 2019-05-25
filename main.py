@@ -1,5 +1,3 @@
-fl = 0
-
 
 def quick_sort(array_unsorted):
     if len(array_unsorted) == 1 or len(array_unsorted) == 0:
@@ -34,7 +32,7 @@ def quick_sort(array_unsorted):
         return array_unsorted
 
 
-def Input_array():
+def input_array():
     global unsorted_array
     print("Press q to quit inserting values\n")
     unsorted_array = []
@@ -54,7 +52,7 @@ def Input_array():
 
 if __name__ == "__main__":
 
-    Input_array()
+    input_array()
 
     if len(unsorted_array) == 0:
         print("\n\nNothing to sort")
@@ -64,5 +62,4 @@ if __name__ == "__main__":
         print(unsorted_array)
         print(" Sorted  List : ", end="")
         print(quick_sort(unsorted_array))
-        print("\nInversions Present : ", fl)
         print("\n\n  Goodbye Human")
